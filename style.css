@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "hanken";
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "hanken", Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 50px 10px;
+}
+.box {
+    display: flex;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 20%);
+    border-radius: 40px;
+    min-width: 750px;
+    margin-top: 10px;
+}
+@media (max-width: 767px) {
+    body {
+        justify-content: normal;
+    }
+    .box {
+        flex-direction: column;
+        min-width: 100%;
+    }
+}
+.box .left {
+    background-image: linear-gradient(180deg ,hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 40px;
+    padding: 40px;
+    flex: 1;
+    text-align: center ;
+}
+.box .left h2 {
+    color: hsl(241, 100%, 89%);
+}
+.box .left .num {
+    background-image: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 150px;
+    height: 150px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    color: hsl(241, 100%, 89%);
+}
+.box .left .num span {
+    display: block;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+.box .left p {
+    color: hsl(241, 100%, 89%);
+    font-size: 20px;
+    line-height: 1.6;
+}
+.box .left p span {
+    color: white;
+    display: block;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.box .right {
+    padding: 40px;
+    flex: 1;
+}
+.box .right .line {
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+.box .right .line.reaction {
+    background-color:  hsl(0deg 100% 67% / 10%);
+}
+.box .right .line.reaction p {
+    color: hsl(0, 100%, 67%);
+}
+.box .right .line.memory {
+    background-color:  hsl(39deg 100% 56% / 10%);
+}
+.box .right .line.memory p {
+    color: hsl(39, 100%, 56%);
+}
+.box .right .line.verbal {
+    background-color:  hsl(166deg 100% 37% / 10%);
+}
+.box .right .line.verbal p {
+    color: hsl(166, 100%, 37%);
+}
+.box .right .line.visual {
+    background-color:  hsl(234deg 85% 45% / 10%);
+}
+.box .right .line.visual p {
+    color: hsl(234, 85%, 45%);
+}
+.box .right .line img {
+    margin-right: 10px;
+}
+.box .right .line p {
+    margin-right: auto;
+}
+.box .right .line .num {
+    color: hsl(241, 100%, 89%);
+}
+.box .right .line .num span {
+    color: #000;
+    font-weight: bold;
+}
+.box .right a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    padding: 10px 0;
+    border-radius: 20px;
+}
+.box .right a:hover,
+.box .right a:active {
+    background-image: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
